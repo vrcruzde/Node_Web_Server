@@ -1,12 +1,13 @@
 //manejo de variables de entorno
-require('dotenv').config()
-const{get} = require('env-var');
+//require('dotenv').config()
+import env from 'dotenv'
+import envvar from 'env-var';
 
-const envs = {
-    PORT: get('PORT').required().asPortNumber(),
-    PUBLICA_PATH: get('PUBLICA_PATH').default('public').asString()
+env.config()
+
+
+export const envs = {
+    PORT: envvar.get('PORT').required().asPortNumber(),
+    PUBLICA_PATH: envvar.get('PUBLICA_PATH').default('public').asString()
 }
 
-module.exports ={
-     envs
-}
