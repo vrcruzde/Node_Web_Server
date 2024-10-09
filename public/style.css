@@ -1,0 +1,280 @@
+body{
+    font-family: 'Quicksand', sans-serif;/*Copiamos de fonts de goole letra Light300*/
+}
+
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+main{
+    margin: 0 10px;
+}
+
+nav li{
+    display: inline; /* Que ocupe el tamaño de contenido la palabra Home, producto, contacto*/
+    margin: 0 0 0 15px;/*colocar espaciamiento interno de las palabras arriba derecha abajo izquierda*/
+}
+
+.caja { /*para posicionar los titulos y el logo al centro*/
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 112px;
+    right: 0px;
+}
+
+nav a{
+    text-transform: uppercase;/*se colocan en mayusculas las palabras*/
+    color: #000000;
+    font-weight: bold; /*para colocar el negrito de la letras*/
+    font-size: 22px;
+    text-decoration: none;/*quitar subrayado*/
+}
+
+nav a:hover{   /*para que al pasar el mause se seleccione con el color*/
+    color: #c78c19;
+    text-decoration: underline;  /* subrayado*/
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;/*para el espaciamiento de header y main*/
+}
+
+.productos li{
+    display: inline-block; /*pone en columnas de 3 los productos*/
+    text-align: center; 
+    width: 30%; /* que cada elemento ocupe el 30% del espacio*/
+    vertical-align: top;
+    /*background: #CCCCCC; se habia colocado para dar visual a los cuadros del producto*/
+    margin: 0 1.5%; /* añadir espacio entre los elementos 0vertical y 1.5 en laterales*/
+    padding: 30px 20px;
+    box-sizing: border-box;/* va a contabilizar los 20px de padding desde dentro del elemento */
+    border: 2px solid #000000;/*resumido el border en una linea*/
+    border-radius: 10px;
+
+   /* border-color: #000000; color del borde
+    border-width: 2px;  arncho del borde
+    border-style: solid;  estilo solido*/
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+}
+
+.productos li:active{ /*al dar click se pasa a color verde*/
+    border-color: #088c19;
+}
+
+.productos li:hover h2{ /*cuando paso el mause resalta el titulo*/
+    font-size: 33px;
+}
+
+.productos h2{
+    font-size: 30px; /*tamaño de la letra a 30px*/
+    font-weight: bold;/* se define con negrita*/
+}
+
+.producto_descripcion{
+    font-size: 18px;
+}
+
+.producto_precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px; /*separa el precio de la descripcion*/
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+
+form{
+    margin: 40px 0;
+}
+
+form label, form p{
+    display: block; /*se coloca en formato vertical*/
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;/*se coloca en formato vertical*/
+    margin: 0 0 20px;
+    padding: 3px 20px;
+    width: 50%;
+}
+
+.contact{
+    margin: 10px 0;
+}
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;/*manito con el dedo*/
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);/*al pasar el mause por enviar, este se resalta y hace zoom*/
+    /*transform: rotate(70deg);gira o rota 70°*/
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    font-weight: bold;
+    background: #555555;
+    color: white;
+}
+
+td,tr{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/*CSS para home o pagina principal*/
+
+.banner{
+    width: 100%;
+}
+
+.principal{
+    padding: 3em;
+    background: #FEFEFEFE;
+    width: 940px;/*monitor padron tiene 1270 y 940 se utiliza para centrar*/
+    margin: 0 auto;
+}
+
+.titulo_principal{
+    text-align: center;
+    font-size: 2em; /*aumenta el tamaño que tiene el navegador que es 15px a 30*/
+    margin: 0 0 1em;
+    clear: left;/*no haga cambios despues de los titulos*/
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFEFE, #888888);/*pasar de un color a otro con degradado*/
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.items{
+    line-height: 1.5;
+}
+
+.items:before{
+    content: "★";/* Se coloca la estrella en el inicio de los items*/
+}
+
+.items:first-child{ /* se puede resaltar el primer item o cualquiera con nth-child(se coloca el numero de item) tambien*/
+    font-weight: bold;
+}
+
+.diferenciales{
+    padding: 3em;
+    background: #888888;
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;/*para que queden en dos columnas*/
+    vertical-align: top;/*para que el texto quede en la parte superior*/
+}
+
+.imagen-diferenciales{
+    width: 60%;
+    box-shadow: 10px 10px 30px 15px #000000; /* para realizar sombra en la imagen 30px= difuminacion 15px expancion de difuminacion */
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+.video{
+    margin: 1em auto;
+    text-align: center;
+}
+
+/*para celular*/
+/*medias queries que nos permiten trabajar con exepciones*/
+
+@media screen and (max-width:480px) {
+    
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .caja,.principal,.mapa-contenido, .contenido-diferenciales,.video{
+        width: auto;
+    }
+
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+}
